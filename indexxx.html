@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Happy Girlfriend Day ❤️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Sacramento&display=swap" rel="stylesheet">
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #ffd6e7, #ffe8f3, #fff8fb);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+  padding: 20px 15px;
+  position: relative;
+}
+
+.card {
+  width: 100%;
+  max-width: 650px;
+  background: white;
+  padding: 35px 25px;
+  border-radius: 25px;
+  text-align: center;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, .15);
+  animation: muncul 0.8s ease-out;
+  z-index: 2;
+  position: relative;
+  max-height: 85vh;
+  overflow-y: auto; /* Memastikan teks panjang bisa di-scroll dengan rapi di HP */
+}
+
+@keyframes muncul {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+h1 {
+  font-family: 'Sacramento', cursive;
+  font-size: 55px;
+  color: #ff4f8b;
+  margin-bottom: 10px;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 20px;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 15px;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 25px;
+  white-space: pre-line; /* Mempertahankan spasi dan enter teks */
+}
+
+button {
+  padding: 14px 35px;
+  border: none;
+  border-radius: 50px;
+  background: #ff4f8b;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: .3s;
+  box-shadow: 0 4px 15px rgba(255, 79, 139, 0.4);
+}
+
+button:hover {
+  transform: scale(1.05);
+  background: #ff2f74;
+}
+
+.heart {
+  position: fixed;
+  top: -50px;
+  font-size: 25px;
+  animation: jatuh linear infinite;
+  opacity: .7;
+  pointer-events: none;
+  z-index: 1;
+}
+
+@keyframes jatuh {
+  0% {
+    transform: translateY(-100px) rotate(0deg);
+  }
+  100% {
+    transform: translateY(110vh) rotate(360deg);
+  }
+}
+</style>
+
+</head>
+
+<body>
+
+<div id="love"></div>
+
+<div class="card">
+  <h1>Happy Girlfriend Day 🤍</h1>
+  <h2>For My Beautiful Princess</h2>
+  <p>
+  Aku punya sesuatu yang pengen banget aku kasih ke kamu.
+  Bukan hadiah yang mahal...
+  Tapi semoga semua isi hati aku di sini bisa bikin kamu senyum yaa sayang. 🤍
+  </p>
+  <button onclick="nextPage()">
+  Buka Suratnya 💌
+  </button>
+</div>
+
+<script>
+// Animasi background hati berjatuhan saat pertama kali dibuka
+for(let i = 0; i < 30; i++){
+  let h = document.createElement("div");
+  h.className = "heart";
+  h.innerHTML = ["🤍", "💖", "💕", "🌸", "💗"][Math.floor(Math.random() * 5)];
+  h.style.left = Math.random() * 100 + "vw";
+  h.style.animationDuration = (5 + Math.random() * 6) + "s";
+  h.style.fontSize = (18 + Math.random() * 20) + "px";
+  document.body.appendChild(h);
+}
+
+// Halaman 2: Surat Panjang yang Baru
+function nextPage(){
+  document.querySelector(".card").innerHTML = `
+    <h1>Happy Girlfriend Day 🤍</h1>
+    <p style="text-align:left; font-size:15px; line-height:1.8;">
+happyyyy myyyy girlfriendddd tercintaaaakuuuu 🤍🌷🥹
+
+makasihhh yaaa sayanggg udahh hadiiirr diii hiduppp akuuu. makasihhh jugaaa karenaaa selaluuu buatt akuuu ngerasaaa punyaa rumahhh diii kamuuu. kehadiran kamuu bener-bener bikin hariii hariii akuuu jauhh lebihh indahhh. kadanggg cuma liatt pap kamuu, denger suara kamuu, atauu ngobroll samaa kamuu bentarr ajaa udahh cukup bikin akuuu senyumm sendiriii hehee.
+
+akuuu bersyukurr bangett bisaa kenall kamuuu, bisaa dipertemukann samaa kamuuu, dannn bisaa punyaa kamuuu sampaiii sekaranggg. jujurr akuuu ngerasaa beruntunggg bangett punyaa ceweee sebaikkk, selucuuu, semanisss, dann seperhatian kamuuu. makasihhh yaaa udahh selaluu jadiii tempattt akuuu ceritaaa, tempattt akuuu pulangg, dann orangg yanggg selaluuu bikin akuuu ngerasaa dicintaiii. 🤍
+
+semogaaa hariii iniii jadiii salahhh satuuu hariii yanggg palinggg manisss buattt kamuuu yaaa. semogaa princessss selaluuu sehatt, bahagiaaa, banyaaakkk senyummm, dannn semuuaa impiannn kamuuu pelan-pelann bisaa tercapaiii. akuuu jugaa berdoaa semogaa setiappp langkahhh kamuuu selaluuu dipermudahh, dijauhiinn dariii hal-hal yanggg bikin sedihh, dann dipenuhin banyakk hal baikk yaaa sayanggg.
+
+akuuu jugaa mintaa maaffff yaaa kalauu selamaaa iniii masiihhh banyakkk kurangnyaaa. mungkinnn akuuu belummm bisaaa jadiii cowooo yanggg kamuuu pengennn atauuu kayakkk cowooo-cowooo lainnn. tapiii percayaa yaaa sayanggg, bukann karenaaa akuuu nggakk mauuu usahaaa buattt kamuuu. akuuu bakal terusss belajarr, terusss usahaaa, dann terusss jadiii versi terbaik dariii diriii akuuu, karenaaa akuuu pengennn bikin princessss banggaaa punyaa akuuu. 🤍
+
+kalauu nantiii princessss lagii sedihhh, capekkk, banyakkk pikiran, atauuu pengenn ceritaa, ceritainn ajaa keee akuuu yaaa. mungkinnn akuuu nggakk selaluu punyaa jawaban terbaik, tapiii akuuu bakal selaluu usahaaa jadiii pendengerr yanggg baikk buattt kamuuu. akuuu maunnyaa kamuuu ngerasaa kalauu kamuuu nggakk sendirian, karenaaa adaaa akuuu yanggg bakal selaluuu nemeninn princessss akuuu.
+
+teruss yaaa sayanggg, kalauu nantiii kitaaa adaaa salahhh pahamm, ngambekk, atauuu beda pendapatt, yukkk kitaa omonginn baikk-baikk yaaa. jangannn salingg diemmm lamaa-lamaa, jangannn dipendemm sendirii. akuuu maunnyaa kitaaa samaa-samaa belajarr, salinggg jagaaa, salinggg percayaa, salinggg ngertiii, dannn terusss tumbuhh barengg. akuuu nggakk pengennn nyarii orangg baruuu lagiii, akuuu cumaaa pengennn terusss samaaa kamuuu.
+
+dannn satuuu lagiii yaaa sayanggg, jangannn pernahhh ngerasaa kamuuu nggakk berhargaaa. buatt akuuu kamuuu ituuu berhargaaa bangett. akuuu banggaaa punyaa kamuuu, banggaaa bisaa kenall kamuuu, dannn bersyukurr bangett Tuhan ngenalin akuuu samaa princessss sebaikkk, secantikkk, dannn semanis kamuuu. jangannn pernahhh ngeraguinn cintaaa akuuu keee kamuuu yaaa, karenaaa setiappp harinyaa akuuu selaluuu sayanggg, banggaaa, dannn bersyukurr punyaa kamuuu.
+
+sekalii lagiii, happyyyy girlfrienddd dayyy princessss akuuu. 🤍🌷 makasihhh yaaa karenaaa sampaiii hariii iniii kamuuu masii milihh akuuu, masii mauu jalaninn semuuaa iniii samaa akuuu. semogaaa hubungannn kitaaa makinnn kuattt, makinnn dewasa, makinnn banyakk tawaaa dibandinggg airr mataa, dann semogaaa kitaaa bisaa ngewujudinn semuuaa mimpiii kitaa samaa-samaaa.
+
+loveeee youuuu sooo muchhhh princessss akuuu. akuuu sayangggg samaa kamuuu hariii iniii, besokkk, lusaaa, dann seterusnyaaa. terimakasii yaaa udahh jadiii bagian terbaikk diii hidupp akuuu. i loveee youuu alwaysss. 🤍🥹🫶🏻🌷
+    </p>
+    <button onclick="lastPage()">
+    Lanjut yaa sayang 🤍
+    </button>
+  `;
+}
+
+// Halaman 3: Pesan Penutup
+function lastPage(){
+  document.querySelector(".card").innerHTML = `
+    <h1 style="font-size:75px;">🤍</h1>
+    <h1>One Last Thing...</h1>
+    <p style="text-align:left; font-size:15px; line-height:1.8;">
+Princessss...
+
+Sebenernyaa masii banyakk bangett yanggg pengenn akuuu sampeinn keee kamuuu.
+Tapiii mungkinngg nggakk semuanyaaa bisaaa dijelasinn pakeee kataa-kataa.
+
+Akkuu cumaaa mauuu kamuuu tauuu...
+Terimakasii yaaa karenaaa udahh milihh akuuu.
+Terimakasii yaaa karenaaa masii bertahann samaa akuuu.
+Terimakasii yaaa karenaaa udahhh jadiii alasann akuuu buattt terusss belajarr jadiii oranggg yanggg lebihhh baikkk setiappp harinyaa.
+
+Akkuu nggakk tauuu nantiii kedepann bakal adaaa masalahhh apaa ajaa.
+Tapiii satuuu yanggg akuuu yakinn...
+Selamaaa kitaaa samaa-samaaa maunn usahaaa, salinggg jagaaa, salinggg percayaa, dann salinggg genggamm tangan, akuuu yakinn kitaaa bisaaa lewatin semuanyaaa.
+
+Akkuu cumaaa pengennn terusss samaaa princessss.
+Teruss ketawaaa barengg.
+Ceritaa barengg.
+Bikin kenangann banyakk banyakk.
+Dann suatuuu saattt nantiii ngeliatt kebelakanggg sambill bilanggg...
+
+"Untunggg yaaa duluu kitaaa nggakk nyerahhh." 🤍🥹
+    </p>
+
+    <h2 style="margin-top:20px; color:#ff4f8b;">
+    Happy Girlfriend Day, My Princess 🌷
+    </h2>
+
+    <p style="font-size:18px; font-weight:bold; text-align:center;">
+    I Love You More Than Yesterday,<br>
+    But Less Than Tomorrow. 🤍
+    </p>
+
+    <h2 style="margin-bottom:20px;">🤍 Noan → Iqiis 🤍</h2>
+
+    <button onclick="loveRain()">
+    Pencett inii yaaa sayanggg 🤍
+    </button>
+  `;
+}
+
+// Halaman 4: Efek Hujan Love Melimpah
+function loveRain(){
+  for(let i = 0; i < 120; i++){
+    let h = document.createElement("div");
+    h.className = "heart";
+    h.innerHTML = ["🤍", "💖", "💕", "🌸", "💗"][Math.floor(Math.random() * 5)];
+    h.style.left = Math.random() * 100 + "vw";
+    h.style.animationDuration = (2 + Math.random() * 3) + "s";
+    h.style.fontSize = (18 + Math.random() * 35) + "px";
+    document.body.appendChild(h);
+  }
+
+  setTimeout(() => {
+    alert("Terimakasii yaa udahhh bacaaa semuanyaaa 🤍🥹\n\nI Love You So Much Princessss 🌷");
+  }, 1200);
+}
+</script>
+
+</body>
+</html>
