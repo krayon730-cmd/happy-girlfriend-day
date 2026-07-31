@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Happy Girlfriend Day ❤️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Sacramento&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Poppins,sans-serif;
+background:linear-gradient(135deg,#ffd6e7,#ffe8f3,#fff8fb);
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+overflow:hidden;
+}
+
+.card{
+width:90%;
+max-width:700px;
+background:white;
+padding:40px;
+border-radius:30px;
+text-align:center;
+box-shadow:0 15px 40px rgba(0,0,0,.15);
+animation:muncul 1s;
+z-index:2;
+}
+
+@keyframes muncul{
+from{
+opacity:0;
+transform:translateY(30px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+h1{
+font-family:Sacramento,cursive;
+font-size:70px;
+color:#ff4f8b;
+margin-bottom:10px;
+}
+
+h2{
+font-size:22px;
+color:#444;
+margin-bottom:20px;
+}
+
+p{
+font-size:17px;
+line-height:1.8;
+color:#666;
+margin-bottom:25px;
+}
+
+button{
+padding:15px 40px;
+border:none;
+border-radius:50px;
+background:#ff4f8b;
+color:white;
+font-size:18px;
+cursor:pointer;
+transition:.3s;
+}
+
+button:hover{
+transform:scale(1.05);
+background:#ff2f74;
+}
+
+.heart{
+position:absolute;
+top:-50px;
+font-size:25px;
+animation:jatuh linear infinite;
+opacity:.7;
+}
+
+@keyframes jatuh{
+
+0%{
+transform:translateY(-100px);
+}
+
+100%{
+transform:translateY(110vh);
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div id="love"></div>
+
+<div class="card">
+
+<h1>Happy Girlfriend Day 🤍</h1>
+
+<h2>For My Beautiful Princess</h2>
+
+<p>
+Aku punya sesuatu yang pengen banget aku kasih ke kamu.
+Bukan hadiah yang mahal...
+Tapi semoga semua isi hati aku di sini bisa bikin kamu senyum yaa sayang. 🤍
+</p>
+
+<button onclick="nextPage()">
+Buka Suratnya 💌
+</button>
+
+</div>
+
+<script>
+
+function nextPage(){
+alert("Halaman berikutnya nanti kita isi suratnya yaa 🤍");
+}
+
+for(let i=0;i<40;i++){
+
+let h=document.createElement("div");
+
+h.className="heart";
+
+h.innerHTML=["🤍","💖","💕","🌸","💗"][Math.floor(Math.random()*5)];
+
+h.style.left=Math.random()*100+"vw";
+
+h.style.animationDuration=(5+Math.random()*6)+"s";
+
+h.style.fontSize=(18+Math.random()*20)+"px";
+
+document.body.appendChild(h);
+
+}
+
+</script>
+
+</body>
+</html>
+function nextPage(){
+
+document.querySelector(".card").innerHTML = `
+
+<h1>Happy Girlfriend Day 🤍</h1>
+
+<p style="text-align:left;font-size:18px;line-height:2;">
+
+Happyyyy myyyy girlfriendddd tercintaaaakuuuu. 🤍🥹
+
+Makasihhh yaaa udahhh hadiiirrr diii hiduppp akuuu. Makasihhh jugaaa karenaaa selaluuu buatt akuuu ngerasaaa punyaa rumahhh diii kamuuu. Setiap hariii yangggg akuuu lewatin rasanyaaa jauhhh lebihhh indahhh karenaaa adaaa kamuuu. Bahkannn pas akuuu lagiii capee, lagiii banyakk pikiran, kamuuu selaluuu bisaaa jadiii alasann akuuu buattt tetep semangatt. 🤍
+
+Sayanggg... hariii iniii mungkin cumaaa satuuu hariii spesialll diii kalenderrr, tapiii buatt akuuu setiappp harinyaa yangggg adaaa kamuuu selaluuu kerasa spesialll. Akuuu bersyukurrr bangett Tuhan mempertemukann akuuu samaaa ceweee sebaikkk, secantikkk, selucuuu, dannn seimuttt kamuuu. 🥹🌷
+
+Makasihhh yaaa karenaaa selaluuu mauuu dengerinn cerita akuuu, nemeninn akuuu, dannn bikin akuuu ngerasaaa dicintaiii. Kamuuu bukannn cumaaa pacarr akuuu, tapiii jugaaa tempatt akuuu pulanggg, tempatt akuuu ceritaaa, dannn oranggg yanggg selaluuu bikin akuuu pengennn jadiii versi terbaik dariii diriii akuuu. 🤍
+
+Akuuu jugaaa mauuu bilanggg makasihhh karenaaa kamuuu selaluuu sabarr ngadepinn akuuu. Mungkin kadangg akuuu masii seringgg nyebelin, overthink, atauuu bikin kamuuu kesel. Tapiii percayaa yaaa sayanggg, akuuu selaluuu usahaaa buattt jadiii cowooo yanggg lebihhh baikkk lagiii buatt kamuuu. 🤍
+
+Kalauuu nantiii kamuuu lagiii capee, sedihhh, atauuu punyaa banyakk pikiran... ceritaaa keee akuuu yaaa. Akuuu mungkinngg gakkk selaluuu punyaaa solusiii, tapiii akuuu selaluuu siappp dengerinn kamuuu. Akuuu pengennn kamuuu ngerasaaa kalauuu kamuuu gakkk sendirian. 🤍
+
+Kalauuu akuuu punyaa salahhh, tolonggg bilanggg keee akuuu yaaa sayanggg. Janganngg dipendemmm sendirii. Akuuu maunnn kitaaa selaluuu ngobrolrinn semuanyaaa baik-baikkk, janganngg salinggg diemmm. Akuuu lebihhh sukkaa kitaaa salinggg ngertii daripadaaa salinggg jauhh. 🫂
+
+Akuuu tauuu... akuuu belummm bisaaa kayakkk cowooo lainnn yanggg mungkin udahhh bisaaa ngelakuinn banyakk hall buatt ceweknyaa. Tapiii percayaa yaaa sayanggg, bukannn karenaaa akuuu gakkk mauuu. Akuuu lagiii berusahaaa, dannn akuuu pengennn nantiii sedikittt demiii sedikittt bisaaa bahagiainnn kamuuu lebihhh lagiii. 🥹🤍
+
+Akuuu gakkk pengennn nyarii oranggg lainnn. Akuuu cumaaa pengennn terusss milihhh kamuuu setiappp harinyaa. Mauuu nantiii adaaa senenggg, sedihhh, ketawaaa, nangisss, akuuu pengennn kitaaa lewatin semuanyaaa samaaa-samaaa. Karenaaa buatt akuuu mempertahaninn kamuuu jauhhh lebihhh pentinggg daripadaaa menanggg pas lagiii berantem. 🤍
+
+Teteeppp jadiii ceweee yangggg baikkk, lucuuu, imutttt, dannn ngangeninnnn yaaa sayanggg. Janganngg pernahlh ngeraguiiinn cintaaa akuuu keee kamuuu. Karenaaa setiappp harinyaa akuuu selaluuu banggaaa punyaa kamuuu. Akuuu sayanggg bangett samaaa kamuuu lebihhh dariii yanggg bisaaa akuuu jelasin pakeee kataaa-kataaa. 🥹🤍
+
+Semogaaa kitaaa bisaaa terusss salinggg jagaaa, salinggg percayaa, salinggg ngertii, dannn terusss tumbuhhh samaaa-samaaa. Akuuu pengennn suatuuu saattt nantiii kitaaa ngeliat kebelakanggg sambill bilanggg, "ternyataa kitaaa berhasilhh yaaa." ❤️
+
+Happyyyy Girlfriendddd Dayyy princessss akuuu. Makasihhh yaaa udahhh jadiii bagian terbaik diii hidup akuuu.
+
+Loveeee youuuu sooo muchhhh todayyy, tomorrowww, anddd foreverrr. 🤍🥹🫶🏻
+
+</p>
+
+<br>
+
+<button onclick="lastPage()">
+Lanjut yaa sayang 🤍
+</button>
+
+`;
+
+}
+function lastPage(){
+
+document.querySelector(".card").innerHTML=`
+
+<h1>I Love You 🤍</h1>
+
+<p style="font-size:20px;line-height:2;">
+
+Terakhirrr...
+
+Akuuu cumaaa punyaa satuuu permintaann kecilll.
+
+Tolonggg teteppp temeninn akuuu yaaa sayanggg. 🤍
+
+Kalauuu nantiii kitaaa adaaa salahhh pahamm, janganngg salinggg ninggalinnn.
+
+Kalauuu akuuu salahhh, marahin akuuu gapapaa, tapiii janganngg berhentiii sayanggg samaaa akuuu yaaa. 🥹
+
+Akuuu bakal terusss belajarrr jadiii cowooo yanggg lebihhh baikkk lagiii buatt kamuuu.
+
+Makasihhh karenaaa udahhh milihhh akuuu.
+
+Akuuu sayanggg bangett samaaa kamuuu.
+
+Hariii iniii.
+
+Besokkk.
+
+Lusaaa.
+
+Tahun depan.
+
+Dan semogaaa selamanyaaa. 🤍
+
+I Love You Princess 🌷
+
+</p>
+
+<h2>🤍 Noan → Iqiis 🤍</h2>
+
+`;
+
+}
+function lastPage(){
+
+document.querySelector(".card").innerHTML = `
+
+<h1 style="font-size:75px;">🤍</h1>
+
+<h1>One Last Thing...</h1>
+
+<p style="text-align:left;font-size:18px;line-height:2;">
+
+Princessss...
+
+Sebenernyaa masii banyakk bangett yanggg pengenn akuuu sampeinn keee kamuuu.
+
+Tapiii mungkinngg nggakk semuanyaaa bisaaa dijelasinn pakeee kataa-kataa.
+
+Akkuu cumaaa mauuu kamuuu tauuu...
+
+Terimakasii yaaa karenaaa udahh milihh akuuu.
+
+Terimakasii yaaa karenaaa masii bertahann samaa akuuu.
+
+Terimakasii yaaa karenaaa udahhh jadiii alasann akuuu buattt terusss belajarr jadiii oranggg yanggg lebihhh baikkk setiappp harinyaa.
+
+Akkuu nggakk tauuu nantiii kedepann bakal adaaa masalahhh apaa ajaa.
+
+Tapiii satuuu yanggg akuuu yakinn...
+
+Selamaaa kitaaa samaa-samaaa maunn usahaaa, salinggg jagaaa, salinggg percayaa, dann salinggg genggamm tangan, akuuu yakinn kitaaa bisaaa lewatin semuanyaaa.
+
+Akkuu cumaaa pengennn terusss samaaa princessss.
+
+Teruss ketawaaa barengg.
+
+Ceritaa barengg.
+
+Bikin kenangann banyakk banyakk.
+
+Dann suatuuu saattt nantiii ngeliatt kebelakanggg sambill bilanggg...
+
+"Untunggg yaaa duluu kitaaa nggakk nyerahhh."
+
+🤍🥹
+
+</p>
+
+<h2 style="margin-top:25px;color:#ff4f8b;">
+Happy Girlfriend Day, My Princess 🌷
+</h2>
+
+<p style="font-size:22px;font-weight:bold;">
+I Love You More Than Yesterday,<br>
+But Less Than Tomorrow. 🤍
+</p>
+
+<button onclick="loveRain()">
+Pencett inii yaaa sayanggg 🤍
+</button>
+
+`;
+
+}
+function loveRain(){
+
+for(let i=0;i<120;i++){
+
+let h=document.createElement("div");
+
+h.className="heart";
+
+h.innerHTML="🤍";
+
+h.style.left=Math.random()*100+"vw";
+
+h.style.animationDuration=(2+Math.random()*3)+"s";
+
+h.style.fontSize=(18+Math.random()*35)+"px";
+
+document.body.appendChild(h);
+
+}
+
+setTimeout(()=>{
+
+alert("Terimakasii yaa udahhh bacaaa semuanyaaa 🤍🥹\n\nI Love You So Much Princessss 🌷");
+
+},1200);
+
+}
